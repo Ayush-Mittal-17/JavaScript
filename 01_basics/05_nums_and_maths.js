@@ -5,7 +5,7 @@
 // console.log(balance);
 
 // console.log(balance.toString().length);
-// console.log(balance.toFixed(1));
+// console.log(balance.toFixed(2));
 
 // const otherNumber = 123.8966
 // console.log(otherNumber.toPrecision(4));
