@@ -26,7 +26,39 @@ jsUser.greetings = function(){
 }
 
 jsUser.greetingsTwo = function(){
-    console.log('Hello JS User, ${this.name}');
+    console.log(`Hello JS User, ${this["full name"]}`);
 }
-console.log(jsUser.greetings());
-console.log(jsUser.greetingsTwo());
+// console.log(jsUser.greetings());
+// console.log(jsUser.greetingsTwo());
+
+const tinderUser = {}
+tinderUser.id = "abc123"
+tinderUser.name = "ayushh"
+tinderUser.isLoggedIn = false
+
+console.log(tinderUser);
+console.log(Object.keys(tinderUser));
+console.log(Object.values(tinderUser));
+console.log(Object.entries(tinderUser));
+
+
+const regularUser = {                                    // Nested Object
+    email: "something@gmail.com",
+    fullName: {
+        userFullName: {
+            firstName: "Ayush",
+            lastName: "Mittal"
+        }
+    }
+}
+// console.log(regularUser.fullName.userFullName.firstName);
+
+
+// Combining Two Objects Using Spread Operator
+
+const obj1 = {1: "a", 2: "b"}
+const obj2 = {3: "a", 4: "b"}
+const obj3 = {5: "c", 6: "d"}
+
+const obj4 = {...obj1, ...obj2, ...obj3}
+// console.log(obj4);
